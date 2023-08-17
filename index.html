@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Noki Cafè</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <!-- Heder -->
+    <section class="header">
+      <nav>
+        <a href="index.html"><img src="logo-removebg-preview.png" alt="" /></a>
+        <div class="nav-links" id="navLinks">
+          <div class="overlay">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+              <li><a href="">HOME</a></li>
+              <li><a href="">ABOUT</a></li>
+              <li><a href="">MENU</a></li>
+              <li><a href="">FEEDBACK</a></li>
+              <li><a href="">CONTACT</a></li>
+            </ul>
+          </div>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <div class="text-box">
+        <h1>🌟 Introducing Noki Cafè - Your Oasis of Flavor! 🌟</h1>
+        <p>
+          Unwind and treat your senses to an unforgettable experience at Noki
+          Cafe. <br />🍃 Step into a world where taste knows no limits, where
+          every sip and bite is an adventure waiting to be explored.
+        </p>
+        <a href="" class="hero-btn">Visit Us To know More</a>
+      </div>
+    </section>
+
+    <section>
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card">
+            <img src="./menu/milktea.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Milk Tea</h5>
+              <p class="card-text">
+                This is a longer card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./menu/p-milktea.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Premium Milk Tea</h5>
+              <p class="card-text">
+                This is a longer card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./menu/fruit-tea.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Fruit Tea</h5>
+              <p class="card-text">
+                This is a longer card with supporting text below as a natural
+                lead-in to additional content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="./menu/frappu.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Frappuccino Overload</h5>
+              <p class="card-text">
+                This is a longer card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu -->
+
+    <section class="menu">
+      <h1>Our Menu</h1>
+      <p>This is our menu</p>
+      <div class="row">
+        <div class="menu-col">
+          <h3>Milk Tea</h3>
+          <img src="./menu/milktea.jpg" alt="" />
+        </div>
+        <div class="menu-col">
+          <h3>Premium Milk Tea</h3>
+          <img src="./menu/p-milktea.jpg" alt="" />
+        </div>
+        <div class="menu-col">
+          <h3>Fruit Tea</h3>
+          <img src="./menu/fruit-tea.jpg" alt="" />
+        </div>
+        <div class="menu-col">
+          <h3>Frappuccino Overload</h3>
+          <img src="./menu/frappu.jpg" alt="" />
+        </div>
+        <div class="menu-col">
+          <h3>Smoothie</h3>
+          <img src="./menu/smoothie.jpg" alt="" />
+        </div>
+        <div class="menu-col">
+          <h3>Snacks & Drinks</h3>
+          <img src="./menu/snacks-drinks.jpg" alt="" />
+        </div>
+        <div class="menu-col">
+          <h3>Belgian Waffle</h3>
+          <img src="./menu/belgianwaffle.jpg" alt="" />
+        </div>
+        <div class="menu-col">
+          <h3>Frappe</h3>
+          <img src="./menu/frappe.jpg" alt="" />
+        </div>
+        <div class="menu-col">
+          <h3>Milk Shake</h3>
+          <img src="./menu/milkshake.jpg" alt="" />
+        </div>
+        <div class="menu-col">
+          <h3>Tapsilog & Fried Noodles</h3>
+          <img src="./menu/tapsilog-friednoodles.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JavaScript Toggle Menu -->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
