@@ -11,6 +11,9 @@
     />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
     />
   </head>
   <body>
@@ -22,11 +25,11 @@
           <div class="overlay">
             <i class="fa fa-times" onclick="hideMenu()"></i>
             <ul>
-              <li><a href="">HOME</a></li>
-              <li><a href="">ABOUT</a></li>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="#about">ABOUT</a></li>
               <li><a href="">MENU</a></li>
-              <li><a href="">FEEDBACK</a></li>
-              <li><a href="">CONTACT</a></li>
+              <li><a href="#feedback">FEEDBACK</a></li>
+              <li><a href="#contact">CONTACT</a></li>
             </ul>
           </div>
         </div>
@@ -39,118 +42,165 @@
           Cafe. <br />🍃 Step into a world where taste knows no limits, where
           every sip and bite is an adventure waiting to be explored.
         </p>
-        <a href="" class="hero-btn">Visit Us To know More</a>
+        <a href="#about" class="hero-btn">Visit Us To know More</a>
       </div>
     </section>
 
-    <section>
-      <div class="row row-cols-1 row-cols-md-2 g-4">
-        <div class="col">
-          <div class="card">
-            <img src="./menu/milktea.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Milk Tea</h5>
-              <p class="card-text">
-                This is a longer card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </p>
-            </div>
+    <!-- About -->
+
+    <section id="about">
+      <h1 class="text-center">About</h1>
+      <p class="text-center text-light">
+        At Noki Cafe, we believe in the power of gastronomy to connect people,
+        cultures, and emotions. Nestled in the heart of Kapatan St. Matimbo,
+        Malolos, Philippines, Noki Cafe has been a cherished culinary
+        destination since its inception in 2020. With a commitment to
+        exceptional flavors, warm hospitality, and a charming ambiance, Noki
+        Cafe has become a haven for food enthusiasts and a gathering place for
+        friends and families alike.
+      </p>
+      <h5 class="text-center">Ambiance and Atmosphere</h5>
+      <p class="text-center text-light">
+        Walking into Noki Cafe is akin to stepping into a world of comfort and
+        charm. Our thoughtfully designed interior blends modern aesthetics with
+        cozy elements, creating an atmosphere that encourages relaxation and
+        meaningful conversations. Whether you're seeking a quiet corner for
+        introspection or a lively space to celebrate special occasions, Noki
+        Cafe offers an environment that suits every mood.
+      </p>
+      <h5 class="text-center">Customer Experience</h5>
+      <p class="text-center text-light">
+        At Noki Cafe, the customer experience is paramount. Our attentive and
+        friendly staff ensures that every visit is a memorable one, providing
+        personalized recommendations and catering to dietary preferences. We
+        value the feedback of our patrons and constantly strive to improve,
+        making Noki Cafe a place where guests feel heard and valued.
+      </p>
+      <h5 class="text-center">Join Us at Noki Cafe</h5>
+      <p class="text-center text-light">
+        > Whether you're a connoisseur of culinary artistry, a seeker of
+        meaningful connections, or simply someone who appreciates the finer
+        things in life, Noki Cafe welcomes you with open arms. Come indulge in
+        flavors that dance on your palate, bask in an ambiance that warms your
+        heart, and create moments that linger in your memory. Join us at Noki
+        Cafe and be a part of a culinary journey that transcends taste and
+        touches the soul.
+      </p>
+    </section>
+
+    <!-- Feedbacks -->
+    <section id="feedback">
+      <h1 class="text-center">Feedbacks</h1>
+      <div id="carouselExample" class="carousel slide mb-5">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./menu/feedback1.jpg" class="d-block w-100" alt="..." />
+            <div class="overlay"></div>
+            <div class="carousel-caption d-none d-md-block"></div>
+          </div>
+          <div class="carousel-item">
+            <img src="./menu/feedback2.jpg" class="d-block w-100" alt="..." />
+            <div class="overlay"></div>
+            <div class="carousel-caption d-none d-md-block"></div>
+          </div>
+          <div class="carousel-item">
+            <img src="./menu/feedback3.jpg" class="d-block w-100" alt="..." />
+            <div class="overlay"></div>
+            <div class="carousel-caption d-none d-md-block"></div>
           </div>
         </div>
-        <div class="col">
-          <div class="card">
-            <img src="./menu/p-milktea.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Premium Milk Tea</h5>
-              <p class="card-text">
-                This is a longer card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="./menu/fruit-tea.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Fruit Tea</h5>
-              <p class="card-text">
-                This is a longer card with supporting text below as a natural
-                lead-in to additional content.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="./menu/frappu.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Frappuccino Overload</h5>
-              <p class="card-text">
-                This is a longer card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </p>
-            </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Contact -->
+
+    <section id="contact">
+      <h1 class="row justify-content-center">Contact Us</h1>
+      <div class="container">
+        <div class="row justify-content-center p-5">
+          <div class="col-md-6 border border-light">
+            <form>
+              <form>
+                <h2 class="row justify-content-center">Fill up this form</h2>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                    placeholder="Enter email"
+                  />
+                  <small id="emailHelp" class="text-light"
+                    >We'll never share your email with anyone else.</small
+                  >
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputText">Your message</label>
+                  <input
+                    type="text"
+                    class="form-control border border-light"
+                    id="exampleInputText"
+                    placeholder="Your message"
+                  />
+                </div>
+                <p>How would you rate our service?</p>
+                <div class="rating">
+                  <input type="radio" id="star5" name="rating" value="5" />
+                  <label for="star5">1 Star</label>
+                  <input type="radio" id="star4" name="rating" value="4" />
+                  <label for="star4">2 Star</label>
+                  <input type="radio" id="star3" name="rating" value="3" />
+                  <label for="star3">3 Star</label>
+                  <input type="radio" id="star2" name="rating" value="2" />
+                  <label for="star2">4 Star</label>
+                  <input type="radio" id="star1" name="rating" value="1" />
+                  <label for="star1">5 Star</label>
+                </div>
+                <textarea
+                  class="form-control mt-3"
+                  placeholder="Leave your feedback"
+                ></textarea>
+                <div class="text-center p-2">
+                  <button type="submit" class="btn btn-outline-light">
+                    Submit
+                  </button>
+                </div>
+              </form>
+            </form>
           </div>
         </div>
       </div>
     </section>
-
-    <!-- Menu -->
-
-    <section class="menu">
-      <h1>Our Menu</h1>
-      <p>This is our menu</p>
-      <div class="row">
-        <div class="menu-col">
-          <h3>Milk Tea</h3>
-          <img src="./menu/milktea.jpg" alt="" />
-        </div>
-        <div class="menu-col">
-          <h3>Premium Milk Tea</h3>
-          <img src="./menu/p-milktea.jpg" alt="" />
-        </div>
-        <div class="menu-col">
-          <h3>Fruit Tea</h3>
-          <img src="./menu/fruit-tea.jpg" alt="" />
-        </div>
-        <div class="menu-col">
-          <h3>Frappuccino Overload</h3>
-          <img src="./menu/frappu.jpg" alt="" />
-        </div>
-        <div class="menu-col">
-          <h3>Smoothie</h3>
-          <img src="./menu/smoothie.jpg" alt="" />
-        </div>
-        <div class="menu-col">
-          <h3>Snacks & Drinks</h3>
-          <img src="./menu/snacks-drinks.jpg" alt="" />
-        </div>
-        <div class="menu-col">
-          <h3>Belgian Waffle</h3>
-          <img src="./menu/belgianwaffle.jpg" alt="" />
-        </div>
-        <div class="menu-col">
-          <h3>Frappe</h3>
-          <img src="./menu/frappe.jpg" alt="" />
-        </div>
-        <div class="menu-col">
-          <h3>Milk Shake</h3>
-          <img src="./menu/milkshake.jpg" alt="" />
-        </div>
-        <div class="menu-col">
-          <h3>Tapsilog & Fried Noodles</h3>
-          <img src="./menu/tapsilog-friednoodles.jpg" alt="" />
-        </div>
-      </div>
-    </section>
-
     <!-- Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
     <!-- JavaScript Toggle Menu -->
     <script>
       var navLinks = document.getElementById("navLinks");
