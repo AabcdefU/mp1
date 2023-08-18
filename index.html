@@ -5,10 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Noki Cafè</title>
     <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+   <!-- Font Awesome -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.css"
+rel="stylesheet"
+/>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -19,114 +30,146 @@
   <body>
     <!-- Heder -->
     <section class="header">
-      <nav>
-        <a href="index.html"><img src="logo-removebg-preview.png" alt="" /></a>
-        <div class="nav-links" id="navLinks">
-          <div class="overlay">
-            <i class="fa fa-times" onclick="hideMenu()"></i>
-            <ul>
-              <li><a href="index.html">HOME</a></li>
-              <li><a href="#about">ABOUT</a></li>
-              <li><a href="menu.html">MENU</a></li>
-              <li><a href="#feedback">FEEDBACK</a></li>
-              <li><a href="#contact">CONTACT</a></li>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <span><img src="logo-removebg-preview.png" alt="" /></span>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse flex-grow-0"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >HOME</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">ABOUT US</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="menu.html">MENU</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#feedback">FEEDBACK</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">CONTACT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="orderform.html">ORDER FORM</a>
+              </li>
             </ul>
           </div>
         </div>
-        <i class="fa fa-bars" onclick="showMenu()"></i>
       </nav>
-      <div class="text-box">
-        <h1>Introducing Noki Cafè <br />Your Oasis of Flavor!</h1>
-        <p>
-          Unwind and treat your senses to an unforgettable experience at Noki
-          Cafe. <br />Step into a world where taste knows no limits, where every
-          sip and bite is an adventure waiting to be explored.
-        </p>
-        <a href="visit.html" class="hero-btn">Visit Us To know More</a>
+      <div class="text-box text-center p-4">
+          <h1>Noki Cafè <br />Your Oasis of Flavor!</h1>
+          <p>
+            Unwind and treat your senses to an unforgettable experience at Noki
+            Cafe. <br />Step into a world where taste knows no limits, where
+            every sip and bite is an adventure waiting to be explored.
+          </p>
+          <a href="visit.html" class="hero-btn">Visit Us To know More</a>
+        </div>
       </div>
     </section>
 
     <!-- About -->
 
     <section id="about">
-      <h1 class="text-center">About</h1>
-      <p class="text-center text-light">
-        At Noki Cafe, we believe in the power of gastronomy to connect people,
-        cultures, and emotions. Nestled in the heart of Kapatan St. Matimbo,
-        Malolos, Philippines, Noki Cafe has been a cherished culinary
-        destination since its inception in 2020. With a commitment to
-        exceptional flavors, warm hospitality, and a charming ambiance, Noki
-        Cafe has become a haven for food enthusiasts and a gathering place for
-        friends and families alike.
-      </p>
-      <h5 class="text-center">Ambiance and Atmosphere</h5>
-      <p class="text-center text-light">
-        Walking into Noki Cafe is akin to stepping into a world of comfort and
-        charm. Our thoughtfully designed interior blends modern aesthetics with
-        cozy elements, creating an atmosphere that encourages relaxation and
-        meaningful conversations. Whether you're seeking a quiet corner for
-        introspection or a lively space to celebrate special occasions, Noki
-        Cafe offers an environment that suits every mood.
-      </p>
-      <h5 class="text-center">Customer Experience</h5>
-      <p class="text-center text-light">
-        At Noki Cafe, the customer experience is paramount. Our attentive and
-        friendly staff ensures that every visit is a memorable one, providing
-        personalized recommendations and catering to dietary preferences. We
-        value the feedback of our patrons and constantly strive to improve,
-        making Noki Cafe a place where guests feel heard and valued.
-      </p>
-      <h5 class="text-center">Join Us at Noki Cafe</h5>
-      <p class="text-center text-light">
-        Whether you're a connoisseur of culinary artistry, a seeker of
-        meaningful connections, or simply someone who appreciates the finer
-        things in life, Noki Cafe welcomes you with open arms. Come indulge in
-        flavors that dance on your palate, bask in an ambiance that warms your
-        heart, and create moments that linger in your memory. Join us at Noki
-        Cafe and be a part of a culinary journey that transcends taste and
-        touches the soul.
-      </p>
+      <div class="container p-5">
+        <h1 class="text-center">About</h1>
+        <p class="text-center text-light">
+          At Noki Cafe, we believe in the power of gastronomy to connect people,
+          cultures, and emotions. Nestled in the heart of Kapatan St. Matimbo,
+          Malolos, Philippines, Noki Cafe has been a cherished culinary
+          destination since its inception in 2020. With a commitment to
+          exceptional flavors, warm hospitality, and a charming ambiance, Noki
+          Cafe has become a haven for food enthusiasts and a gathering place for
+          friends and families alike.
+        </p>
+        <h5 class="text-center">Ambiance and Atmosphere</h5>
+        <p class="text-center text-light">
+          Walking into Noki Cafe is akin to stepping into a world of comfort and
+          charm. Our thoughtfully designed interior blends modern aesthetics
+          with cozy elements, creating an atmosphere that encourages relaxation
+          and meaningful conversations. Whether you're seeking a quiet corner
+          for introspection or a lively space to celebrate special occasions,
+          Noki Cafe offers an environment that suits every mood.
+        </p>
+        <h5 class="text-center">Customer Experience</h5>
+        <p class="text-center text-light">
+          At Noki Cafe, the customer experience is paramount. Our attentive and
+          friendly staff ensures that every visit is a memorable one, providing
+          personalized recommendations and catering to dietary preferences. We
+          value the feedback of our patrons and constantly strive to improve,
+          making Noki Cafe a place where guests feel heard and valued.
+        </p>
+        <h5 class="text-center">Join Us at Noki Cafe</h5>
+        <p class="text-center text-light">
+          Whether you're a connoisseur of culinary artistry, a seeker of
+          meaningful connections, or simply someone who appreciates the finer
+          things in life, Noki Cafe welcomes you with open arms. Come indulge in
+          flavors that dance on your palate, bask in an ambiance that warms your
+          heart, and create moments that linger in your memory. Join us at Noki
+          Cafe and be a part of a culinary journey that transcends taste and
+          touches the soul.
+        </p>
+      </div>
     </section>
 
     <!-- Feedbacks -->
     <section id="feedback">
-      <h1 class="text-center">Feedbacks</h1>
-      <div id="carouselExample" class="carousel slide mb-5">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="./menu/feedback1.jpg" class="d-block w-100" alt="..." />
-            <div class="overlay"></div>
-            <div class="carousel-caption d-none d-md-block"></div>
+      <div class="container p-5">
+        <h1 class="text-center">Feedbacks</h1>
+        <div id="carouselExample" class="carousel slide mb-5">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./menu/feedback1.jpg" class="d-block w-100" alt="..." />
+              <div class="overlay"></div>
+              <div class="carousel-caption d-none d-md-block"></div>
+            </div>
+            <div class="carousel-item">
+              <img src="./menu/feedback2.jpg" class="d-block w-100" alt="..." />
+              <div class="overlay"></div>
+              <div class="carousel-caption d-none d-md-block"></div>
+            </div>
+            <div class="carousel-item">
+              <img src="./menu/feedback3.jpg" class="d-block w-100" alt="..." />
+              <div class="overlay"></div>
+              <div class="carousel-caption d-none d-md-block"></div>
+            </div>
           </div>
-          <div class="carousel-item">
-            <img src="./menu/feedback2.jpg" class="d-block w-100" alt="..." />
-            <div class="overlay"></div>
-            <div class="carousel-caption d-none d-md-block"></div>
-          </div>
-          <div class="carousel-item">
-            <img src="./menu/feedback3.jpg" class="d-block w-100" alt="..." />
-            <div class="overlay"></div>
-            <div class="carousel-caption d-none d-md-block"></div>
-          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExample"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExample"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
     </section>
 
@@ -190,6 +233,36 @@
         </div>
       </div>
     </section>
+
+<!-- footer -->
+    <footer class="bg-dark text-center text-white">
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/NokiCafexSnacks" role="button"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+    
+          <!-- Messenger -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/messages/t/104823135235397" role="button"
+            ><i class="fab fa-facebook-messenger"></i>
+          </a>
+    
+         
+        </section>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
+    
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2020 Copyright:
+        <a class="text-white" href="https://www.facebook.com/NokiCafexSnacks">Noki Cafè</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
     <!-- Bootstrap -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -201,16 +274,5 @@
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous"
     ></script>
-    <!-- JavaScript Toggle Menu -->
-    <script>
-      var navLinks = document.getElementById("navLinks");
-
-      function showMenu() {
-        navLinks.style.right = "0";
-      }
-      function hideMenu() {
-        navLinks.style.right = "-200px";
-      }
-    </script>
   </body>
 </html>
